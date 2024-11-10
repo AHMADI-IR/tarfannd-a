@@ -26,6 +26,37 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+/* مخفی کردن منو در موبایل */
+.navbar {
+    display: none; /* مخفی کردن منو در حالت عادی */
+}
+
+#menu-bar {
+    display: block; /* نمایش آیکون منو فقط در موبایل */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* تنظیمات منو برای صفحه‌های کوچک‌تر */
+@media (max-width: 768px) {
+    .header-2 .navbar.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ff6600;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-2 .navbar a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+}
 
 .search-box-container {
     position: relative;
