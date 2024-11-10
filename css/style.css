@@ -65,6 +65,40 @@ button, a {
   background:var(--black);
 }
 
+/* استایل دهی به کل منو */
+.navbar {
+    background-color: #ff6600; /* رنگ نارنجی پس‌زمینه */
+    padding: 10px 0;
+    border-radius: 15px; /* حاشیه گرد برای کل منو */
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white; /* رنگ متن لینک‌ها */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px; /* حاشیه گرد برای لینک‌ها */
+    transition: background-color 0.3s; /* انیمیشن برای تغییر رنگ */
+}
+
+/* افکت شناور شدن (hover) برای لینک‌ها */
+.navbar a:hover {
+    background-color: #cc5200; /* رنگ تیره‌تر نارنجی هنگام هاور */
+    color: #ffffff; /* رنگ متن سفید هنگام هاور */
+}
+
 .heading{
   text-align: center;
   color:var(--black);
