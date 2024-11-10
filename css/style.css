@@ -175,6 +175,85 @@ input[type="checkbox"]:checked ~ .navbar {
     margin: 20px 0;
 }
 
+/* استایل پس‌زمینه برای بخش دانلود */
+#deal {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+/* دکمه‌های دانلود */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* استایل شبکه‌های اجتماعی در فوتر */
+.footer .share a {
+    margin: 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .share a:hover {
+    color: #ff6600;
+}
+
+/* استایل‌های عمومی */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-1, .header-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    color: orange;
+}
+
+.search-box-container {
+    position: relative;
+}
+
+.search-box-container input[type="search"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.search-box-container label {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+
 /* استایل دکمه‌ها */
 .btn {
     display: inline-block;
