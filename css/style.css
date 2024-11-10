@@ -58,6 +58,43 @@ body {
     }
 }
 
+/* مخفی کردن منو و نمایش آیکون در موبایل */
+#menu-bar {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* نمایش آیکون منو و مخفی‌سازی خود منو برای صفحه‌های کوچک */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* مخفی کردن منو */
+    }
+    #menu-bar {
+        display: block; /* نمایش آیکون سه خط */
+    }
+}
+
+/* زمانی که منو باز است */
+input[type="checkbox"]:checked ~ .navbar {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ff6600;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
 .search-box-container {
     position: relative;
 }
