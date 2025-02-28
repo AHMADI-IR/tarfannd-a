@@ -1,4 +1,4 @@
-/* تنظیمات کلی برای تمامی اجزا */
+/* تنظیمات کلی */
 * {
     margin: 0;
     padding: 0;
@@ -9,153 +9,46 @@
 body {
     line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
+    direction: rtl;
 }
 
 /* استایل هدر */
-.header-1 {
+.header-1, .header-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
     background-color: #ff6600;
-    padding: 10px;
+    color: white;
 }
 
 .header-1 .logo {
-    color: white;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    color: white;
 }
-/* مخفی کردن منو در موبایل */
+
+/* منو */
 .navbar {
-    display: none; /* مخفی کردن منو در حالت عادی */
-}
-
-#menu-bar {
-    display: block; /* نمایش آیکون منو فقط در موبایل */
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-}
-
-/* تنظیمات منو برای صفحه‌های کوچک‌تر */
-@media (max-width: 768px) {
-    .header-2 .navbar.active {
-        display: block;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #ff6600;
-        width: 100%;
-        text-align: center;
-    }
-
-    .header-2 .navbar a {
-        display: block;
-        padding: 15px;
-        color: white;
-        text-decoration: none;
-    }
-}
-
-/* مخفی کردن منو و نمایش آیکون در موبایل */
-#menu-bar {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-}
-
-/* نمایش آیکون منو و مخفی‌سازی خود منو برای صفحه‌های کوچک */
-@media (max-width: 768px) {
-    .navbar {
-        display: none; /* مخفی کردن منو */
-    }
-    #menu-bar {
-        display: block; /* نمایش آیکون سه خط */
-    }
-}
-
-/* زمانی که منو باز است */
-input[type="checkbox"]:checked ~ .navbar {
-    display: block;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #ff6600;
-    width: 100%;
-    text-align: center;
-}
-
-.navbar a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-}
-
-
-.search-box-container {
-    position: relative;
-}
-
-.search-box-container input[type="search"] {
-    padding: 8px 40px 8px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.search-box-container label {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #333;
-    cursor: pointer;
-}
-
-.header-2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff6600;
-    padding: 10px 0;
-    border-radius: 15px;
-}
-
-/* استایل منو */
-.navbar {
-    background-color: #ff6600; /* رنگ نارنجی پس‌زمینه */
-    text-align: center;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    display: inline-block;
-    margin: 0 15px;
+    gap: 20px;
 }
 
 .navbar a {
-    color: white; /* رنگ متن لینک‌ها */
+    color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 10px; /* حاشیه گرد برای لینک‌ها */
-    transition: background-color 0.3s; /* انیمیشن برای تغییر رنگ */
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #cc5200; /* رنگ تیره‌تر نارنجی هنگام هاور */
-    color: #ffffff; /* رنگ متن سفید هنگام هاور */
+    background-color: #cc5200;
+    border-radius: 5px;
 }
 
-/* استایل بخش خانه */
+/* بخش خانه */
 .home {
     display: flex;
     align-items: center;
@@ -175,119 +68,7 @@ input[type="checkbox"]:checked ~ .navbar {
     margin: 20px 0;
 }
 
-/* استایل پس‌زمینه برای بخش دانلود */
-#deal {
-    padding: 50px 0;
-    color: white;
-    text-align: center;
-}
-
-/* دکمه‌های دانلود */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 10px 0;
-}
-
-/* استایل شبکه‌های اجتماعی در فوتر */
-.footer .share a {
-    margin: 10px;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-}
-
-.footer .share a:hover {
-    color: #ff6600;
-}
-
-/* استایل‌های عمومی */
-body {
-    font-family: Arial, sans-serif;
-}
-
-.header-1, .header-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-}
-
-.logo {
-    font-size: 24px;
-    color: orange;
-}
-
-.search-box-container {
-    position: relative;
-}
-
-.search-box-container input[type="search"] {
-    padding: 8px;
-    border-radius: 4px;
-    border: none;
-}
-
-.search-box-container label {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    color: #333;
-    cursor: pointer;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.navbar a:hover {
-    background-color: #ff6600;
-    border-radius: 5px;
-}
-
-
-/* استایل دکمه‌ها */
-.btn {
-    display: inline-block;
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #cc5200;
-}
-
-/* استایل بنر */
-.banner-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.banner {
-    position: relative;
-    max-width: 500px;
-    text-align: center;
-}
-
-.banner img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* استایل بخش دسته‌بندی */
+/* بخش تازه‌ترین‌ها */
 .category {
     padding: 40px 0;
     text-align: center;
@@ -312,6 +93,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    background-color: white;
 }
 
 .category .box img {
@@ -319,10 +101,11 @@ body {
     border-radius: 10px;
 }
 
-/* استایل بخش دانلود */
+/* بخش دانلود‌ها */
 .deal {
     padding: 40px 0;
     text-align: center;
+    color: white;
 }
 
 .deal .content {
@@ -332,7 +115,22 @@ body {
     gap: 10px;
 }
 
-/* استایل فوتر */
+/* دکمه‌ها */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc5200;
+}
+
+/* فوتر */
 .footer {
     background-color: #333;
     color: white;
@@ -361,10 +159,4 @@ body {
 
 .footer .box .share .btn:hover {
     color: #ff6600;
-}
-
-.footer .services-block {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
